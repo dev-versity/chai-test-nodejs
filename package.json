@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "mocha --reporter nyan",
+    "test": "mocha --harmony --verbose",
+    "single": "mocha",
     "test:watch": "mocha --reporter nyan --watch --watch-files /test/*,src/*.js",
     "dev": "nodemon src/app.js"
   },
