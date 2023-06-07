@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha --harmony --verbose",
     "single": "mocha",
+    "test-report": "mocha 'test' --reporter mochawesome --require mochawesome/register",
     "test:watch": "mocha --reporter nyan --watch --watch-files /test/*,src/*.js",
     "dev": "nodemon src/app.js"
   },
@@ -18,6 +19,7 @@
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
     "mongoose": "^7.2.2",
     "nodemon": "^2.0.22"
   }
